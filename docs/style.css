@@ -1,0 +1,113 @@
+*
+{
+  box-sizing: border-box;
+}
+body
+{
+  background-color: rgba(1, 144, 255, 20%);
+  font-family: "Work Sans", sans-serif;
+  font-size: 18px;
+}
+h2,
+p
+{
+  margin: 0;
+}
+
+.initial-screen
+{
+  display: grid;
+  grid-template-columns: 1fr;
+
+  padding: 0 1em;
+  max-height: 90vh;
+}
+
+.game-title
+{
+  margin: 1em 0;
+
+  text-align: center;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.game-form
+{
+  margin: 2rem 0;
+}
+.game-form .name
+{
+  padding: .5em;
+  width: 100%;
+
+  font-size: 18px;
+  text-align: center;
+
+  border-radius: 100vmax;
+  border: none;
+  box-shadow: 0 4px 10px #85858540;
+}
+
+.score-container
+{
+  padding: .5em;
+  background-color: rgba(0, 145, 255, 20%);
+  border-radius: 9px;
+  box-shadow: 0 4px 10px #85858540;
+}
+.score-table
+{
+  position: relative;
+  max-height: 250px;
+
+  overflow-y: scroll; 
+
+  border-radius: 2px;
+  background-color: #fff;
+}
+.score-table--row:first-child
+{
+  position: sticky;
+  top: 0;
+  padding: .5em 0;
+  
+  background-color: #fff;
+  border-bottom: 2px solid #85858540;
+}
+.score-table--row
+{
+  padding: .3em 0;
+  display: grid;
+  grid-template-columns: 4fr 3fr;
+}
+.score-table--title,
+.score-table--element
+{
+  width: 100%;
+  text-align: center;
+  color: #110000b0;
+}
+.score-table--title
+{
+  font-size: 16px;
+  font-weight: 600;
+}
+.score-table--element
+{
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.first-player
+{
+  background-color: rgb(187, 255, 158);
+}
+.second-player
+{
+  background-color: rgb(249, 255, 161);
+}
+.third-player
+{
+  background-color: rgb(249, 226, 197);
+}
